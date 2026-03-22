@@ -1,0 +1,36 @@
+{
+  "services": [
+    "payments-api",
+    "customer-portal",
+    "auth-service",
+    "analytics-platform",
+    "internal-hr",
+    "billing-engine"
+  ],
+  "dependencies": [
+    {
+      "source": "customer-portal",
+      "target": "auth-service"
+    },
+    {
+      "source": "customer-portal",
+      "target": "payments-api"
+    },
+    {
+      "source": "payments-api",
+      "target": "billing-engine"
+    },
+    {
+      "source": "payments-api",
+      "target": "auth-service"
+    },
+    {
+      "source": "analytics-platform",
+      "target": "billing-engine"
+    },
+    {
+      "source": "internal-hr",
+      "target": "auth-service"
+    }
+  ]
+}

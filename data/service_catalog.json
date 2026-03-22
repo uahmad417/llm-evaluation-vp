@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "service": "payments-api",
+      "criticality": "mission-critical",
+      "handlesPII": true,
+      "revenueImpact": "medium",
+      "description": "payments-api is an enterprise microservice used in production workloads and integrated with other internal systems."
+    },
+    {
+      "service": "customer-portal",
+      "criticality": "critical",
+      "handlesPII": false,
+      "revenueImpact": "high",
+      "description": "customer-portal is an enterprise microservice used in production workloads and integrated with other internal systems."
+    },
+    {
+      "service": "auth-service",
+      "criticality": "mission-critical",
+      "handlesPII": false,
+      "revenueImpact": "medium",
+      "description": "auth-service is an enterprise microservice used in production workloads and integrated with other internal systems."
+    },
+    {
+      "service": "analytics-platform",
+      "criticality": "important",
+      "handlesPII": false,
+      "revenueImpact": "low",
+      "description": "analytics-platform is an enterprise microservice used in production workloads and integrated with other internal systems."
+    },
+    {
+      "service": "internal-hr",
+      "criticality": "supporting",
+      "handlesPII": false,
+      "revenueImpact": "high",
+      "description": "internal-hr is an enterprise microservice used in production workloads and integrated with other internal systems."
+    },
+    {
+      "service": "billing-engine",
+      "criticality": "critical",
+      "handlesPII": true,
+      "revenueImpact": "medium",
+      "description": "billing-engine is an enterprise microservice used in production workloads and integrated with other internal systems."
+    }
+  ]
+}
