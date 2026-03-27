@@ -9,7 +9,15 @@ UNWIND obj AS data
 UNWIND data.assets as asset
 
 // Create the asset nodes
-MERGE (a:Asset {name: asset.assetId, hostname: asset.hostname})
+MERGE (a:Asset {
+    name: asset.assetId,
+    hostname: asset.hostname,
+    tier: asset.serviceTier,
+    environment: asset.environment,
+    network_exposure: asset.networkExposure,
+    data_classification: asset.dataClassification, 
+    owner_team: asset.ownerTeam
+    })
 
 WITH count(*) AS dummy
 
@@ -21,7 +29,11 @@ UNWIND obj AS data
 // Create vulnerability instance nodes
 UNWIND data.runs AS run
 UNWIND run.tool.driver.rules AS rule
-MERGE (v:Vulnerability {name: rule.id, cvss: toFloat(rule.properties.`security-severity`), description: rule.shortDescription.text})
+MERGE (v:Vulnerability {
+    name: rule.id,
+    cvss: toFloat(rule.properties.`security-severity`),
+    description: rule.shortDescription.text
+    })
 
 WITH count(*) AS dummy
 
@@ -32,7 +44,24 @@ UNWIND obj AS data
 
 // Create service nodes
 UNWIND data.services as service
-MERGE (s:Service {name: service.service, description: service.description})
+MERGE (s:Service {
+    name: service.service,
+    description: service.description,
+    handles_pii: toBoolean(service.handlesPII),
+    revenue_impact: service.revenueImpact,
+    criticality: service.criticality
+    })
+
+WITH count(*) AS dummy
+
+// Append service docs to service nodes
+CALL json_util.load_from_path("/data/service_docs.json")
+YIELD objects as obj
+UNWIND obj AS data
+UNWIND data.documents as doc
+
+MATCH (s:Service {name: doc.service})
+SET s.documentation = doc.text
 
 WITH count(*) AS dummy
 
@@ -43,7 +72,13 @@ UNWIND obj AS data
 
 // Create dependency nodes
 UNWIND data.packages as package
-MERGE (p:Package {name: package.name, version: package.versionInfo, spdx_id: package.SPDXID})
+MERGE (p:Package {
+    name: package.name,
+    version: package.versionInfo,
+    spdx_id: package.SPDXID,
+    download_location: package.downloadLocation,
+    supplier: package.supplier
+    })
 
 WITH count(*) AS dummy
 
@@ -52,7 +87,12 @@ CALL json_util.load_from_path("/data/exploit_intelligence.json")
 YIELD objects
 UNWIND objects as obj
 UNWIND obj.vulnerabilities as vuln
-CREATE (t:ThreatSignal {cve: vuln.cve, epss: vuln.epss, kevListed: toBoolean(vuln.kevListed), publicExploit: toBoolean(vuln.publicExploit)})
+CREATE (t:ThreatSignal {
+    cve: vuln.cve,
+    epss: vuln.epss,
+    kevListed: toBoolean(vuln.kevListed),
+    publicExploit: toBoolean(vuln.publicExploit)
+    })
 
 WITH count(*) AS dummy
 
