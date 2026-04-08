@@ -218,4 +218,5 @@ __marimo__/
 .langgraph_api/
 
 # datasets
-.datasets/
+.datasets/data/
+datasets/push-notif-anon-dataset-260330/anonymized-dataset/
