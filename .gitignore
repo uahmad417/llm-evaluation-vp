@@ -214,3 +214,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# langgraph
+.langgraph_api/
+
+# datasets
+.datasets/
