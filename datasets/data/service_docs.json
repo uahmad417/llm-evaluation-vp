@@ -1,0 +1,16 @@
+{
+  "documents": [
+    {
+      "service": "payments-api",
+      "text": "Internet-facing production API that processes customer payment transactions and integrates with external payment gateways."
+    },
+    {
+      "service": "auth-service",
+      "text": "Central authentication and identity service used by all enterprise applications."
+    },
+    {
+      "service": "analytics-platform",
+      "text": "Internal analytics platform processing operational metrics and aggregated customer data."
+    }
+  ]
+}

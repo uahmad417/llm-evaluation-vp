@@ -1,0 +1,1738 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Synthetic Enterprise Scanner",
+          "rules": [
+            {
+              "id": "CVE-2021-44228",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 7.0
+              }
+            },
+            {
+              "id": "CVE-2022-22965",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 7.0
+              }
+            },
+            {
+              "id": "CVE-2023-44487",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 7.4
+              }
+            },
+            {
+              "id": "CVE-2020-1472",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 7.0
+              }
+            },
+            {
+              "id": "CVE-2023-3519",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 6.0
+              }
+            },
+            {
+              "id": "CVE-2021-34527",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 9.9
+              }
+            },
+            {
+              "id": "CVE-2022-30190",
+              "shortDescription": {
+                "text": "Known vulnerability"
+              },
+              "properties": {
+                "security-severity": 7.2
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host1.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host1.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-001",
+            "port": 3306,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host1.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host1.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-001",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host2.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host2.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-002",
+            "port": 3306,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host2.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host2.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-002",
+            "port": 443,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host3.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host3.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-003",
+            "port": 22,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host3.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host3.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-003",
+            "port": 22,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host3.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host3.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-003",
+            "port": 80,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host4.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host4.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-004",
+            "port": 8080,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host4.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host4.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-004",
+            "port": 443,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host4.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host4.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-004",
+            "port": 22,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host4.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host4.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-004",
+            "port": 443,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host4.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host4.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-004",
+            "port": 3306,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host5.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host5.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-005",
+            "port": 3306,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host5.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host5.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-005",
+            "port": 3306,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host5.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host5.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-005",
+            "port": 80,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host6.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host6.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-006",
+            "port": 22,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host6.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host6.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-006",
+            "port": 3306,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host6.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host6.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-006",
+            "port": 443,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host6.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host6.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-006",
+            "port": 443,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host7.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host7.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-007",
+            "port": 3306,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host7.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host7.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-007",
+            "port": 80,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host7.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host7.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-007",
+            "port": 22,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host8.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host8.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-008",
+            "port": 3306,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host8.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host8.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-008",
+            "port": 22,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host8.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host8.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-008",
+            "port": 443,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host8.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host8.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-008",
+            "port": 8080,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host9.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host9.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-009",
+            "port": 8080,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host9.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host9.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-009",
+            "port": 22,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host9.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host9.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-009",
+            "port": 80,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host9.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host9.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-009",
+            "port": 443,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host10.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host10.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-010",
+            "port": 22,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host10.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host10.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-010",
+            "port": 8080,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host10.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host10.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-010",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host11.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host11.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-011",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host11.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host11.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-011",
+            "port": 8080,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host11.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host11.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-011",
+            "port": 3306,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host12.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host12.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-012",
+            "port": 3306,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host12.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host12.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-012",
+            "port": 80,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host12.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host12.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-012",
+            "port": 443,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host12.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host12.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-012",
+            "port": 443,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host13.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host13.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-013",
+            "port": 443,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host13.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host13.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-013",
+            "port": 443,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host14.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host14.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-014",
+            "port": 8080,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host14.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host14.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-014",
+            "port": 22,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host14.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host14.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-014",
+            "port": 3306,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host14.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host14.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-014",
+            "port": 3306,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host15.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host15.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-015",
+            "port": 3306,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host15.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host15.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-015",
+            "port": 8080,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host15.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host15.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-015",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host16.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host16.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-016",
+            "port": 8080,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host16.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host16.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-016",
+            "port": 80,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host16.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host16.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-016",
+            "port": 3306,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host17.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host17.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-017",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host17.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host17.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-017",
+            "port": 22,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host18.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host18.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-018",
+            "port": 8080,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host18.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host18.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-018",
+            "port": 80,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host19.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host19.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-019",
+            "port": 3306,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host19.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host19.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-019",
+            "port": 22,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host19.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host19.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-019",
+            "port": 3306,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host19.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host19.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-019",
+            "port": 443,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host20.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host20.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-020",
+            "port": 8080,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host20.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host20.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-020",
+            "port": 80,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host20.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host20.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-020",
+            "port": 22,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host21.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host21.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-021",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host21.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host21.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-021",
+            "port": 22,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-30190",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-30190 detected on host21.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host21.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-021",
+            "port": 443,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host22.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host22.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-022",
+            "port": 443,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-22965",
+          "level": "error",
+          "message": {
+            "text": "CVE-2022-22965 detected on host22.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host22.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-022",
+            "port": 80,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host22.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host22.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-022",
+            "port": 443,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-34527",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-34527 detected on host23.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host23.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-023",
+            "port": 8080,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host23.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host23.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-023",
+            "port": 8080,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host23.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host23.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-023",
+            "port": 22,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host24.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host24.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-024",
+            "port": 22,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2020-1472",
+          "level": "error",
+          "message": {
+            "text": "CVE-2020-1472 detected on host24.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host24.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-024",
+            "port": 80,
+            "scanner": "trivy"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host24.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host24.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-024",
+            "port": 3306,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-3519",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-3519 detected on host24.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host24.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-024",
+            "port": 80,
+            "scanner": "nessus"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-44228",
+          "level": "error",
+          "message": {
+            "text": "CVE-2021-44228 detected on host25.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host25.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-025",
+            "port": 80,
+            "scanner": "openvas"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host25.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host25.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-025",
+            "port": 80,
+            "scanner": "qualys"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-44487",
+          "level": "error",
+          "message": {
+            "text": "CVE-2023-44487 detected on host25.corp.example"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "host25.corp.example"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "assetId": "asset-025",
+            "port": 443,
+            "scanner": "trivy"
+          }
+        }
+      ]
+    }
+  ]
+}

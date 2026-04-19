@@ -1,0 +1,279 @@
+{
+  "assets": [
+    {
+      "assetId": "asset-001",
+      "hostname": "host1.corp.example",
+      "service": "auth-service",
+      "serviceTier": "mission-critical",
+      "environment": "prod",
+      "networkExposure": "partner-network",
+      "dataClassification": "regulated",
+      "ownerTeam": "payments",
+      "cloudProvider": "aws"
+    },
+    {
+      "assetId": "asset-002",
+      "hostname": "host2.corp.example",
+      "service": "auth-service",
+      "serviceTier": "mission-critical",
+      "environment": "prod",
+      "networkExposure": "internal",
+      "dataClassification": "confidential",
+      "ownerTeam": "payments",
+      "cloudProvider": "aws"
+    },
+    {
+      "assetId": "asset-003",
+      "hostname": "host3.corp.example",
+      "service": "analytics-platform",
+      "serviceTier": "important",
+      "environment": "dev",
+      "networkExposure": "internet-facing",
+      "dataClassification": "confidential",
+      "ownerTeam": "payments",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-004",
+      "hostname": "host4.corp.example",
+      "service": "payments-api",
+      "serviceTier": "mission-critical",
+      "environment": "prod",
+      "networkExposure": "internet-facing",
+      "dataClassification": "regulated",
+      "ownerTeam": "security",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-005",
+      "hostname": "host5.corp.example",
+      "service": "payments-api",
+      "serviceTier": "mission-critical",
+      "environment": "prod",
+      "networkExposure": "internet-facing",
+      "dataClassification": "confidential",
+      "ownerTeam": "data",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-006",
+      "hostname": "host6.corp.example",
+      "service": "customer-portal",
+      "serviceTier": "critical",
+      "environment": "prod",
+      "networkExposure": "internal",
+      "dataClassification": "internal",
+      "ownerTeam": "security",
+      "cloudProvider": "azure"
+    },
+    {
+      "assetId": "asset-007",
+      "hostname": "host7.corp.example",
+      "service": "payments-api",
+      "serviceTier": "mission-critical",
+      "environment": "prod",
+      "networkExposure": "partner-network",
+      "dataClassification": "regulated",
+      "ownerTeam": "security",
+      "cloudProvider": "aws"
+    },
+    {
+      "assetId": "asset-008",
+      "hostname": "host8.corp.example",
+      "service": "internal-hr",
+      "serviceTier": "supporting",
+      "environment": "prod",
+      "networkExposure": "internal",
+      "dataClassification": "confidential",
+      "ownerTeam": "infra",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-009",
+      "hostname": "host9.corp.example",
+      "service": "auth-service",
+      "serviceTier": "mission-critical",
+      "environment": "dev",
+      "networkExposure": "internal",
+      "dataClassification": "public",
+      "ownerTeam": "data",
+      "cloudProvider": "gcp"
+    },
+    {
+      "assetId": "asset-010",
+      "hostname": "host10.corp.example",
+      "service": "customer-portal",
+      "serviceTier": "critical",
+      "environment": "prod",
+      "networkExposure": "internal",
+      "dataClassification": "confidential",
+      "ownerTeam": "payments",
+      "cloudProvider": "gcp"
+    },
+    {
+      "assetId": "asset-011",
+      "hostname": "host11.corp.example",
+      "service": "internal-hr",
+      "serviceTier": "supporting",
+      "environment": "dev",
+      "networkExposure": "partner-network",
+      "dataClassification": "public",
+      "ownerTeam": "data",
+      "cloudProvider": "aws"
+    },
+    {
+      "assetId": "asset-012",
+      "hostname": "host12.corp.example",
+      "service": "payments-api",
+      "serviceTier": "mission-critical",
+      "environment": "dev",
+      "networkExposure": "internet-facing",
+      "dataClassification": "internal",
+      "ownerTeam": "platform",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-013",
+      "hostname": "host13.corp.example",
+      "service": "analytics-platform",
+      "serviceTier": "important",
+      "environment": "prod",
+      "networkExposure": "internal",
+      "dataClassification": "regulated",
+      "ownerTeam": "security",
+      "cloudProvider": "gcp"
+    },
+    {
+      "assetId": "asset-014",
+      "hostname": "host14.corp.example",
+      "service": "auth-service",
+      "serviceTier": "mission-critical",
+      "environment": "staging",
+      "networkExposure": "internal",
+      "dataClassification": "public",
+      "ownerTeam": "security",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-015",
+      "hostname": "host15.corp.example",
+      "service": "payments-api",
+      "serviceTier": "mission-critical",
+      "environment": "prod",
+      "networkExposure": "partner-network",
+      "dataClassification": "public",
+      "ownerTeam": "payments",
+      "cloudProvider": "aws"
+    },
+    {
+      "assetId": "asset-016",
+      "hostname": "host16.corp.example",
+      "service": "billing-engine",
+      "serviceTier": "critical",
+      "environment": "staging",
+      "networkExposure": "internal",
+      "dataClassification": "public",
+      "ownerTeam": "data",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-017",
+      "hostname": "host17.corp.example",
+      "service": "billing-engine",
+      "serviceTier": "critical",
+      "environment": "staging",
+      "networkExposure": "internet-facing",
+      "dataClassification": "public",
+      "ownerTeam": "data",
+      "cloudProvider": "azure"
+    },
+    {
+      "assetId": "asset-018",
+      "hostname": "host18.corp.example",
+      "service": "internal-hr",
+      "serviceTier": "supporting",
+      "environment": "prod",
+      "networkExposure": "partner-network",
+      "dataClassification": "regulated",
+      "ownerTeam": "platform",
+      "cloudProvider": "gcp"
+    },
+    {
+      "assetId": "asset-019",
+      "hostname": "host19.corp.example",
+      "service": "customer-portal",
+      "serviceTier": "critical",
+      "environment": "prod",
+      "networkExposure": "partner-network",
+      "dataClassification": "public",
+      "ownerTeam": "infra",
+      "cloudProvider": "aws"
+    },
+    {
+      "assetId": "asset-020",
+      "hostname": "host20.corp.example",
+      "service": "customer-portal",
+      "serviceTier": "critical",
+      "environment": "dev",
+      "networkExposure": "partner-network",
+      "dataClassification": "internal",
+      "ownerTeam": "platform",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-021",
+      "hostname": "host21.corp.example",
+      "service": "internal-hr",
+      "serviceTier": "supporting",
+      "environment": "staging",
+      "networkExposure": "internal",
+      "dataClassification": "public",
+      "ownerTeam": "data",
+      "cloudProvider": "onprem"
+    },
+    {
+      "assetId": "asset-022",
+      "hostname": "host22.corp.example",
+      "service": "customer-portal",
+      "serviceTier": "critical",
+      "environment": "prod",
+      "networkExposure": "internet-facing",
+      "dataClassification": "confidential",
+      "ownerTeam": "platform",
+      "cloudProvider": "azure"
+    },
+    {
+      "assetId": "asset-023",
+      "hostname": "host23.corp.example",
+      "service": "billing-engine",
+      "serviceTier": "critical",
+      "environment": "prod",
+      "networkExposure": "internet-facing",
+      "dataClassification": "public",
+      "ownerTeam": "security",
+      "cloudProvider": "azure"
+    },
+    {
+      "assetId": "asset-024",
+      "hostname": "host24.corp.example",
+      "service": "auth-service",
+      "serviceTier": "mission-critical",
+      "environment": "staging",
+      "networkExposure": "internet-facing",
+      "dataClassification": "confidential",
+      "ownerTeam": "infra",
+      "cloudProvider": "gcp"
+    },
+    {
+      "assetId": "asset-025",
+      "hostname": "host25.corp.example",
+      "service": "internal-hr",
+      "serviceTier": "supporting",
+      "environment": "staging",
+      "networkExposure": "internet-facing",
+      "dataClassification": "regulated",
+      "ownerTeam": "infra",
+      "cloudProvider": "onprem"
+    }
+  ]
+}

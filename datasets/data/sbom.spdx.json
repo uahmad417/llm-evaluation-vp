@@ -1,0 +1,429 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "enterprise-product-sbom",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-log4j-core",
+      "name": "log4j-core",
+      "versionInfo": "3.6",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    },
+    {
+      "SPDXID": "SPDXRef-spring-core",
+      "name": "spring-core",
+      "versionInfo": "2.8",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    },
+    {
+      "SPDXID": "SPDXRef-openssl",
+      "name": "openssl",
+      "versionInfo": "5.9",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    },
+    {
+      "SPDXID": "SPDXRef-nginx",
+      "name": "nginx",
+      "versionInfo": "4.5",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    },
+    {
+      "SPDXID": "SPDXRef-postgresql",
+      "name": "postgresql",
+      "versionInfo": "1.4",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    },
+    {
+      "SPDXID": "SPDXRef-redis",
+      "name": "redis",
+      "versionInfo": "1.2",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    },
+    {
+      "SPDXID": "SPDXRef-jwt-lib",
+      "name": "jwt-lib",
+      "versionInfo": "4.1",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization:ExampleCorp"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "Asset-asset-001",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-001",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-001",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-002",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-002",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-002",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-003",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-003",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-004",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-004",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-004",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-005",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-005",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-005",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-006",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-006",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-007",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-007",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-008",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-008",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-008",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-009",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-009",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-009",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-010",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-010",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-011",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-011",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-011",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-011",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-012",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-012",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-013",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-013",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-014",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-014",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-014",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-014",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-015",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-015",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-016",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-016",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-016",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-016",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-017",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-017",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-017",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-017",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-018",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-018",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-018",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-018",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-019",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-019",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-019",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-019",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-020",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-020",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-020",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-021",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-021",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-jwt-lib"
+    },
+    {
+      "spdxElementId": "Asset-asset-022",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-022",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-022",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-023",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-023",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-024",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-redis"
+    },
+    {
+      "spdxElementId": "Asset-asset-024",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-024",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-postgresql"
+    },
+    {
+      "spdxElementId": "Asset-asset-024",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-025",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-openssl"
+    },
+    {
+      "spdxElementId": "Asset-asset-025",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-log4j-core"
+    },
+    {
+      "spdxElementId": "Asset-asset-025",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-nginx"
+    },
+    {
+      "spdxElementId": "Asset-asset-025",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-spring-core"
+    }
+  ]
+}
