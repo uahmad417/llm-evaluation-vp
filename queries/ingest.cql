@@ -1,9 +1,5 @@
-//TODO: Optimize query
-// 1. create constraints
-// 2. Create indexes
-
 // 1. Load the assets
-CALL json_util.load_from_path("/anonymized-dataset/cmdb_assets.json")
+CALL json_util.load_from_path("/anonymized_v4/cmdb_assets.json")
 YIELD objects as obj
 UNWIND obj AS data
 UNWIND data.assets as asset
@@ -17,19 +13,22 @@ MERGE (a:Asset {
     network_exposure: asset.networkExposure,
     data_classification: asset.dataClassification, 
     owner_team: asset.ownerTeam,
-    cloud_provider: asset.cloudProvider
+    cloud_provider: asset.cloudProvider,
+    kind: asset.kind
     })
 
 WITH count(*) AS dummy
 
 // 2. Load scanner results
-CALL json_util.load_from_path("/anonymized-dataset/scanner_results.sarif.json")
+CALL json_util.load_from_path("/anonymized_v4/scanner_results.sarif.json")
 YIELD objects as obj
 UNWIND obj AS data
 
 // Create vulnerability instance nodes
 UNWIND data.runs AS run
 UNWIND run.tool.driver.rules AS rule
+WITH rule
+WHERE rule.id STARTS WITH "CVE"
 MERGE (v:Vulnerability {
     name: rule.id,
     cvss: toFloat(rule.properties.`security-severity`),
@@ -39,7 +38,7 @@ MERGE (v:Vulnerability {
 WITH count(*) AS dummy
 
 //3. Load services data
-CALL json_util.load_from_path("/anonymized-dataset/service_catalog.json")
+CALL json_util.load_from_path("/anonymized_v4/service_catalog.json")
 YIELD objects as obj
 UNWIND obj AS data
 
@@ -56,7 +55,7 @@ MERGE (s:Service {
 WITH count(*) AS dummy
 
 // Append service docs to service nodes
-CALL json_util.load_from_path("/anonymized-dataset/service_docs.json")
+CALL json_util.load_from_path("/anonymized_v4/service_docs.json")
 YIELD objects as obj
 UNWIND obj AS data
 UNWIND data.documents as doc
@@ -67,7 +66,7 @@ SET s.documentation = doc.text
 WITH count(*) AS dummy
 
 //4. Load sbom data
-CALL json_util.load_from_path("/anonymized-dataset/sbom.spdx.json")
+CALL json_util.load_from_path("/anonymized_v4/sbom.spdx.json")
 YIELD objects as obj
 UNWIND obj AS data
 
@@ -78,15 +77,17 @@ MERGE (p:Package {
     version: package.versionInfo,
     spdx_id: package.SPDXID,
     download_location: package.downloadLocation,
-    supplier: package.supplier
+    supplier: package.supplier,
+    ecosystem: package.ecosystem
     })
 
 WITH count(*) AS dummy
 
 // 5. Load threat intelligence data
-CALL json_util.load_from_path("/anonymized-dataset/exploit_intelligence.json")
+CALL json_util.load_from_path("/anonymized_v4/exploit_intelligence.json")
 YIELD objects
 UNWIND objects as obj
+
 UNWIND obj.vulnerabilities as vuln
 CREATE (t:ThreatSignal {
     cve: vuln.cve,
@@ -95,32 +96,32 @@ CREATE (t:ThreatSignal {
     publicExploit: toBoolean(vuln.publicExploit)
     })
 
-WITH count(*) AS dummy
 
-// Reload files to create node relationships
-
-// 6. Create relation between vulnerability and asset
-// TODO: query breaks here, find a fix
-// `GQLAlchemyDatabaseError: Error on line 103 position 14. The underlying parsing error is mismatched input 'ON' expecting '='`
+// Create index for faster querying
 CREATE INDEX ON :Vulnerability(name);
-CREATE INDEX ON :Asset(hostname);
-CALL json_util.load_from_path("/anonymized-dataset/scanner_results.sarif.json")
+CREATE INDEX ON :Package(name);
+CREATE INDEX ON :Asset(name);
+
+// 6. Create relation between vulnerability and package
+
+CALL json_util.load_from_path("/anonymized_v4/scanner_results.sarif.json")
 YIELD objects AS obj
 UNWIND obj AS data
 UNWIND data.runs AS run
 UNWIND run.results AS result
 WITH result.ruleId AS ruleName, 
-     result.locations[0].physicalLocation.artifactLocation.uri AS host,
      result.level as resultLevel,
-     result.message.text as desc
+     result.message.text as desc,
+     result.properties.package_name AS pname,
+     result.properties.package_version AS pversion
 MATCH (v:Vulnerability {name: ruleName})
-MATCH (a:Asset {hostname: host})
-CREATE (v)-[:AFFECTS {level: resultLevel, text: desc}]->(a)
+MATCH (p:Package {name: pname, version: pversion})
+MERGE (v)-[:EXISTS_IN]->(p)
 
 WITH count(*) AS dummy
 
 // 7. Create relation between assets and services
-CALL json_util.load_from_path("/anonymized-dataset/cmdb_assets.json")
+CALL json_util.load_from_path("/anonymized_v4/cmdb_assets.json")
 YIELD objects as obj
 UNWIND obj AS data
 UNWIND data.assets as asset
@@ -133,19 +134,19 @@ MERGE (a)-[:HOSTS]->(s)
 WITH count(*) AS dummy
 
 // 8. Create relation between asset and package
-CALL json_util.load_from_path("/anonymized-dataset/sbom.spdx.json")
+CALL json_util.load_from_path("/anonymized_v4/sbom.spdx.json")
 YIELD objects as obj
 UNWIND obj AS data
 UNWIND data.relationships as relation
 MATCH (a:Asset {name: substring(relation.spdxElementId, 6)})
 MATCH (p:Package {spdx_id: relation.relatedSpdxElement})
 
-MERGE (a)-[:DEPENDS_ON]->(p)
+MERGE (p)-[:INSTALLED_ON]->(a)
 
 WITH count(*) AS dummy
 
 // 9. Create relation between service and service
-CALL json_util.load_from_path("/anonymized-dataset/architecture.json")
+CALL json_util.load_from_path("/anonymized_v4/architecture.json")
 YIELD objects as obj
 UNWIND obj as data
 UNWIND data.dependencies as dep
@@ -157,7 +158,7 @@ MERGE (src)-[:DEPENDS_ON]->(tgt)
 WITH count(*) AS dummy
 
 // 10. Creat threat intel relation
-CALL json_util.load_from_path("/anonymized-dataset/exploit_intelligence.json")
+CALL json_util.load_from_path("/anonymized_v4/exploit_intelligence.json")
 YIELD objects
 UNWIND objects as obj
 UNWIND obj.vulnerabilities as vuln
