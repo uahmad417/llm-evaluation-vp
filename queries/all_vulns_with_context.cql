@@ -1,4 +1,4 @@
-MATCH (v:Vulnerability)-[:AFFECTS]->(a:Asset)
+MATCH (v:Vulnerability)-[:EXISTS_IN]->(p:Package)-[:INSTALLED_ON]->(a:Asset)
 OPTIONAL MATCH (v)-[:HAS]->(t:ThreatSignal)
 WITH v, t,
      COLLECT(DISTINCT a.network_exposure) AS exposures,
