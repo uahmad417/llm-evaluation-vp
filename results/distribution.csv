@@ -1,0 +1,10 @@
+cvss_band,exposure_band,tier_band,count
+Critical,external,low,2
+Critical,internal,low,7
+High,external,high,7
+High,internal,low,37
+Low,external,high,1
+Low,internal,low,1
+Medium,external,high,3
+Medium,external,low,2
+Medium,internal,low,31

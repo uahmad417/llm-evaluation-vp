@@ -1,0 +1,92 @@
+cve_id,cvss,description,epss,kev,public_exploit,exposures,tiers,n_assets
+CVE-2026-6357,7.1,Arbitrary Code Injection,0.00016,false,false,["internal"],["supporting"],1
+CVE-2026-41324,8.7,Allocation of Resources Without Limits or Throttling,0.00055,false,false,["internal"],["supporting"],1
+CVE-2026-39983,9.8,CRLF Injection,0.01844,false,false,["internal"],["supporting"],1
+CVE-2026-35536,5.4,Parameter Injection,0.00056,false,false,["internal"],["supporting"],1
+CVE-2026-34073,6.3,Improper Certificate Validation,0.00009,false,false,["internal"],["supporting"],1
+CVE-2026-34043,8.2,Allocation of Resources Without Limits or Throttling,0.00018,false,false,["internal"],["supporting"],2
+CVE-2026-33750,8.7,Infinite loop,0.00024,false,false,"[""internet-facing"",""partner-network"",""internal""]","[""mission-critical"",""critical"",""important"",""supporting""]",18
+CVE-2026-4800,9.8,Arbitrary Code Injection,0.00038,false,false,["internal"],["supporting"],1
+CVE-2026-33671,8.7,Regular Expression Denial of Service (ReDoS),0.00019,false,false,["internal"],["supporting"],1
+CVE-2026-27903,8.7,Inefficient Algorithmic Complexity,0.00036,false,false,"[""internet-facing"",""partner-network"",""internal""]","[""mission-critical"",""critical"",""important"",""supporting""]",17
+CVE-2026-27601,8.2,Uncontrolled Recursion,0.00022,false,false,["internal"],["supporting"],1
+CVE-2026-27459,9.8,Buffer Overflow,0.00026,false,false,["internal"],["supporting"],1
+CVE-2026-24049,7.7,Directory Traversal,0.00013,false,false,["internal"],["supporting"],1
+CVE-2026-24001,7.5,Regular Expression Denial of Service (ReDoS),0.0002,false,false,["internal"],["supporting"],2
+CVE-2026-2391,8.2,Allocation of Resources Without Limits or Throttling,0.0005,false,false,"[""partner-network"",""internal"",""internet-facing""]","[""important"",""supporting"",""mission-critical"",""critical""]",16
+CVE-2026-31958,8.7,Allocation of Resources Without Limits or Throttling,0.00027,false,false,["internal"],["supporting"],1
+CVE-2026-22701,5.8,Symlink Attack,0.00004,false,false,["internal"],["supporting"],1
+CVE-2026-21441,8.9,Improper Handling of Highly Compressed Data (Data Amplification),0.00032,false,false,["internal"],["supporting"],3
+CVE-2024-56201,8.8,Improper Neutralization,0.00423,false,false,["internal"],["supporting"],1
+CVE-2024-52804,7.5,Regular Expression Denial of Service (ReDoS),0.00148,false,false,["internal"],["supporting"],1
+CVE-2024-55565,6.5,Improper Input Validation,0.00107,false,false,["internal"],["supporting"],2
+CVE-2024-45813,6.9,Regular Expression Denial of Service (ReDoS),0.00076,false,false,"[""internet-facing"",""internal""]","[""mission-critical"",""critical"",""important"",""supporting""]",14
+CVE-2022-40897,5.9,Regular Expression Denial of Service (ReDoS),0.00513,false,false,["internal"],["supporting"],1
+CVE-2026-2950,6.9,Prototype Pollution,0.00025,false,false,["internal"],["supporting"],1
+CVE-2024-34064,6.1,Cross-site Scripting (XSS),0.01147,false,false,["internal"],["supporting"],1
+CVE-2026-4539,4.8,Regular Expression Denial of Service (ReDoS),0.00007,false,false,["internal"],["supporting"],1
+CVE-2025-66418,8.9,Allocation of Resources Without Limits or Throttling,0.00016,false,false,["internal"],["supporting"],3
+CVE-2024-4068,7.5,Excessive Platform Resource Consumption within a Loop,0.00225,false,false,["internal"],["supporting"],2
+CVE-2024-6345,8.8,Improper Control of Generation of Code ('Code Injection'),0.07336,false,false,["internal"],["supporting"],2
+CVE-2024-47874,8.7,Allocation of Resources Without Limits or Throttling,0.00125,false,false,["internal"],["supporting"],1
+CVE-2024-39689,7.5,Insufficient Verification of Data Authenticity,0.21233,false,false,["internal"],["supporting"],2
+CVE-2026-23949,8.7,Directory Traversal,0.00091,false,false,["internal"],["supporting"],1
+CVE-2024-35195,6,Always-Incorrect Control Flow Implementation,0.00046,false,false,["internal"],["supporting"],2
+CVE-2025-47273,8.8,Directory Traversal,0.00487,false,false,["internal"],["supporting"],2
+CVE-2026-27448,6.3,Not Failing Securely ('Failing Open'),0.00041,false,false,["internal"],["supporting"],1
+CVE-2024-53899,7.8,Command Injection,0.00226,false,false,["internal"],["supporting"],1
+CVE-2025-68146,6.5,Time-of-check Time-of-use (TOCTOU) Race Condition,0.00004,false,false,["internal"],["supporting"],1
+CVE-2024-11831,6.1,Cross-site Scripting (XSS),0.01098,false,false,["internal"],["supporting"],2
+CVE-2024-2511,5.9,Uncontrolled Resource Consumption ('Resource Exhaustion'),0.04146,false,false,["internal"],["supporting"],1
+CVE-2024-37891,6.5,Improper Removal of Sensitive Information Before Storage or Transfer,0.00263,false,false,["internal"],["supporting"],2
+CVE-2023-26136,9.8,Prototype Pollution,0.06423,false,false,"[""partner-network"",""internal""]","[""important"",""supporting""]",3
+CVE-2021-44906,9.8,Prototype Pollution,0.00882,false,false,["internal"],["supporting"],1
+CVE-2025-5889,3.1,Regular Expression Denial of Service (ReDoS),0.00092,false,false,"[""internet-facing"",""partner-network"",""internal""]","[""mission-critical"",""critical"",""important"",""supporting""]",18
+CVE-2025-9375,6.9,XML Injection,0.00089,false,false,["internal"],["supporting"],2
+CVE-2024-45296,6.9,Regular Expression Denial of Service (ReDoS),0.00064,false,false,["internal"],["supporting"],1
+CVE-2026-41907,6.3,"Improper Validation of Specified Index, Position, or Offset in Input",0.00055,false,false,"[""internal"",""internet-facing"",""partner-network""]","[""supporting"",""mission-critical"",""important"",""critical""]",12
+CVE-2024-6119,8.2,Type Confusion,0.06553,false,false,["internal"],["supporting"],1
+CVE-2025-62727,8.7,Regular Expression Denial of Service (ReDoS),0.00398,false,false,["internal"],["supporting"],1
+CVE-2024-4603,5.3,Uncontrolled Resource Consumption ('Resource Exhaustion'),0.00092,false,false,["internal"],["supporting"],1
+CVE-2025-67726,8.7,Excessive Iteration,0.00032,false,false,["internal"],["supporting"],1
+CVE-2026-33672,6.9,Prototype Pollution,0.00057,false,false,["internal"],["supporting"],1
+CVE-2023-25344,9.8,Arbitrary Code Execution,0.0041,false,false,["internal"],["supporting"],1
+CVE-2026-26007,8.2,Insufficient Verification of Data Authenticity,0.00009,false,false,["internal"],["supporting"],1
+CVE-2020-7660,8.1,Arbitrary Code Injection,0.02901,false,false,["internal"],["supporting"],2
+CVE-2026-27699,9.8,Directory Traversal,0.00152,false,false,["internal"],["supporting"],1
+CVE-2023-28155,6.5,Server-side Request Forgery (SSRF),0.00557,false,false,"[""partner-network"",""internal""]","[""important"",""supporting""]",2
+CVE-2026-22702,4.5,Symlink Attack,0.00014,false,false,["internal"],["supporting"],1
+CVE-2025-61140,8.8,Prototype Pollution,0.00069,false,false,["internal"],["supporting"],1
+CVE-2023-25345,7.5,Arbitrary File Read,0.00433,false,false,["internal"],["supporting"],1
+CVE-2025-54121,6.9,Allocation of Resources Without Limits or Throttling,0.00245,false,false,["internal"],["supporting"],1
+CVE-2024-34062,7.3,Injection,0.00091,false,false,["internal"],["supporting"],1
+CVE-2024-12797,8.8,Missing Report of Error Condition,0.00722,false,false,["internal"],["supporting"],1
+CVE-2024-5569,6.9,Infinite loop,0.00016,false,false,["internal"],["supporting"],2
+CVE-2024-56326,8.1,Template Injection,0.0042,false,false,["internal"],["supporting"],1
+CVE-2025-15284,8.7,Allocation of Resources Without Limits or Throttling,0.00072,false,false,"[""internet-facing"",""internal"",""partner-network""]","[""mission-critical"",""critical"",""important"",""supporting""]",16
+CVE-2026-3219,5,Arbitrary File Upload,0.00017,false,false,["internal"],["supporting"],1
+CVE-2025-27516,8.8,Template Injection,0.00121,false,false,["internal"],["supporting"],1
+CVE-2026-32597,8.7,Improper Verification of Cryptographic Signature,0.00013,false,false,["internal"],["supporting"],1
+CVE-2024-47081,5.9,Insertion of Sensitive Information Into Sent Data,0.00208,false,false,["internal"],["supporting"],2
+CVE-2025-47287,8.7,Allocation of Resources Without Limits or Throttling,0.01164,false,false,["internal"],["supporting"],1
+CVE-2024-43799,5,Cross-site Scripting,0.00166,false,false,"[""internet-facing"",""internal""]","[""mission-critical"",""critical"",""important"",""supporting""]",14
+CVE-2025-68480,6.9,Asymmetric Resource Consumption (Amplification),0.00132,false,false,["internal"],["supporting"],1
+CVE-2025-50181,6.1,Open Redirect,0.00079,false,false,["internal"],["supporting"],3
+CVE-2026-25645,5.5,Insecure Temporary File,0.00005,false,false,["internal"],["supporting"],2
+CVE-2025-50182,6.1,Open Redirect,0.00066,false,false,["internal"],["supporting"],1
+CVE-2023-0842,5.3,Prototype Pollution,0.00326,false,false,["partner-network"],["important"],1
+CVE-2025-8869,5.9,Symlink Attack,0.00021,false,false,["internal"],["supporting"],1
+CVE-2025-54798,6.8,Symlink Attack,0.00153,false,false,["internal"],["supporting"],1
+CVE-2026-44240,8.7,Allocation of Resources Without Limits or Throttling,0,false,false,["internal"],["supporting"],1
+CVE-2020-7598,8.1,Prototype Pollution,0.00214,false,false,["internal"],["supporting"],1
+CVE-2025-64718,6.9,Prototype Pollution,0.00034,false,false,["internal"],["supporting"],2
+CVE-2025-65945,8.2,Improper Verification of Cryptographic Signature,0.0001,false,false,"[""internet-facing"",""partner-network"",""internal""]","[""mission-critical"",""critical"",""important"",""supporting""]",17
+CVE-2025-66471,8.9,Improper Handling of Highly Compressed Data (Data Amplification),0.00014,false,false,["internal"],["supporting"],3
+CVE-2025-67724,6.1,HTTP Header Injection,0.00031,false,false,["internal"],["supporting"],1
+CVE-2025-67725,8.7,Inefficient Algorithmic Complexity,0.00265,false,false,["internal"],["supporting"],1
+CVE-2025-69873,8.2,Regular Expression Denial of Service (ReDoS),0.00015,false,false,"[""partner-network"",""internal"",""internet-facing""]","[""important"",""supporting"",""mission-critical"",""critical""]",15
+CVE-2026-26996,8.7,Regular Expression Denial of Service (ReDoS),0.00026,false,false,"[""internal"",""internet-facing"",""partner-network""]","[""supporting"",""mission-critical"",""critical"",""important""]",17
+CVE-2025-7783,9.4,Predictable Value Range from Previous Values,0.00449,false,false,"[""partner-network"",""internal""]","[""important"",""supporting""]",3
+CVE-2025-13465,8.2,Prototype Pollution,0.00029,false,false,["internal"],["supporting"],1
+CVE-2026-1615,9.8,Arbitrary Code Injection,0.00107,false,false,["internal"],["supporting"],1
+CVE-2026-1703,3.9,Directory Traversal,0.00026,false,false,["internal"],["supporting"],1
